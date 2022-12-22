@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/imagem-header.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador - Sprint 01</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img class="imagem-cabecalho" src="imagens/imagem-header.png" alt="">
+            <h1>Decodificador</h1>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <textarea id="texto-digitado" placeholder="Digite seu texto..."></textarea>
+            <p class="aviso-letras"> <img src="imagens/Vector.png"> Apenas letras minúsculas e sem acento.</p>
+            <button type="button" class="botao" id="criptografar">Criptografar</button>
+            <button type="button" class="botao" id="descriptografar">Descriptografar</button>
+        </form>
+        
+        <section class="texto-resultado">
+            <p id="resultado"></p> 
+            <button class="botao" id="copiar">Copiar</button>
+            <button class="botao" id="limpar">Limpar</button>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="item-footer">
+                <a href="https://github.com/vitorFialho" target="_blank"><img src="imagens/github-mark.png" alt="Logo do GitHub"></a>
+            </li>
+            
+            <li class="item-footer">
+                <a href="https://www.linkedin.com/in/vitor-fialho/" target="_blank"><img src="imagens/linkedin.png" alt="Logo do Linkedin"></a>
+            </li>
+            
+            <li class="item-footer">
+                <a href="https://www.instagram.com/fialho159/" target="_blank"><img src="imagens/instagram.png" alt="Logo do Instagram"></a>
+            </li>
+        </ul>
+        <p>Desenvolvido por Vitor Fialho</p>
+    </footer>
+   
+    <script src="decodificador.js"></script>
+</body>
+</html>
