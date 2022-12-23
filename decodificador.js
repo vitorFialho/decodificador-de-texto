@@ -27,6 +27,7 @@ function copiaTexto(){
 
 function limpaTexto(){
     document.getElementById("resultado").textContent = "";
+    document.getElementById("texto-digitado").value = "";
 }
 
 
