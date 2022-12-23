@@ -57,6 +57,10 @@ textarea#texto-digitado{
     margin-top: 5%;
 }
 
+textarea#texto-digitado:focus{
+    border-color: #f3f5fc;
+}
+
 form img{
     width: 4%;
 }
@@ -106,12 +110,12 @@ button#descriptografar{
     height: 85%;
     margin-left: 5%;
     border-radius: 10px;
-    overflow-x: auto;
 }
 
 .texto-resultado p{
     font-family: 'Share Tech Mono', monospace;
     margin: 7% 7%;
+    word-wrap: break-word;
 }
 
 button#copiar{

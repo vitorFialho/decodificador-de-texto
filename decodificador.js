@@ -19,11 +19,16 @@ function descriptografa(){
 function copiaTexto(){
     let texto = document.getElementById("resultado").textContent;
     navigator.clipboard.writeText(texto);
+    botaoCopia.textContent = "Copiado";
+    setTimeout(() => {
+        botaoCopia.textContent = "Copiar"
+    }, 2000);
 }
 
 function limpaTexto(){
     document.getElementById("resultado").textContent = "";
 }
+
 
 botaoCriptografar.onclick = criptografa;
 botaoDescriptografa.onclick = descriptografa;
