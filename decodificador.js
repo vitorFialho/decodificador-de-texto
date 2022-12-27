@@ -23,18 +23,14 @@ function copiaTexto(){
     setTimeout(() => {
         botaoCopia.textContent = "Copiar"
     }, 2000);
-}
-
-function limpaTexto(){
     document.getElementById("resultado").textContent = "";
     document.getElementById("texto-digitado").value = "";
 }
 
-
 botaoCriptografar.onclick = criptografa;
 botaoDescriptografa.onclick = descriptografa;
 botaoCopia.onclick = copiaTexto;
-botaoLimpa.onclick = limpaTexto;
+
 
 
 
