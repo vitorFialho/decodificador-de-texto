@@ -6,6 +6,10 @@ html,body{
     height: 100%;
 }
 
+body{
+    background-color: #f4f4f4;
+}
+
 header{
     background-color: lightblue;
 }
@@ -155,10 +159,9 @@ footer p{
         height: 90vh;
     }
     .cabecalho{
-        position: static;
-        box-sizing: border-box;
-        height: 60px;
-        padding: 40px;
+        position: relative;
+        box-sizing: content-box;
+        height: 50px;
     }
 
     .imagem-cabecalho{
@@ -166,10 +169,11 @@ footer p{
     }
 
     .cabecalho h1{
-        display: inline-block;
-        position: static;
+        position: absolute;
+        top: 50%;
+        left: 9%;
         font-size: 2em;
-        width: fit-content;      
+        width: fit-content;    
     }
 
     form{
@@ -216,7 +220,8 @@ footer p{
     .texto-resultado{
         position: absolute;
         top: 70vh;
-        left: 3vw;
+        left: 50%;
+        transform: translateX(-50%);
         display: inline-block;
         background-color: rgb(255, 255, 255);
         width: 90vw;
