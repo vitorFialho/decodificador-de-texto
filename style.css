@@ -33,7 +33,7 @@ h1{
 
 main{
     position: relative;
-    background-color: #f3f5fc;
+    background-color: #f4f4f4;
     height: 80vh;
 }
 
@@ -155,19 +155,21 @@ footer p{
         height: 90vh;
     }
     .cabecalho{
-        width: 100vw;
+        position: static;
+        box-sizing: border-box;
+        height: 60px;
+        padding: 40px;
     }
 
     .imagem-cabecalho{
-        opacity: 0;
-        width: 20%;
-        height: 20%;
+        display: none;
     }
 
-    h1{
-        position: absolute;
-        right: 0px;
-        color: black;
+    .cabecalho h1{
+        display: inline-block;
+        position: static;
+        font-size: 2em;
+        width: fit-content;      
     }
 
     form{
@@ -192,7 +194,7 @@ footer p{
         box-sizing: border-box;
         text-align: center;
         font-size: 1.2em;
-        width: 75vw;
+        width: 65vw;
         height: 10vh;
         padding: 1%;
         border-radius: 15px;
@@ -202,27 +204,26 @@ footer p{
 
     button#criptografar{  
         background-color: lightblue;
-        left: 1%;
+        left: 5%;
         bottom: 40%;
     }
 
     button#descriptografar{
-        left: -1%;
+        left: 4%;
         bottom: 25%;
     }
 
     .texto-resultado{
         position: absolute;
         top: 70vh;
-        left: 15vw;
+        left: 3vw;
         display: inline-block;
-        background-color: white;
-        width: 60vw;
+        background-color: rgb(255, 255, 255);
+        width: 90vw;
         height: 18vh;
         margin: auto;
         border-radius: 10px;
         font-size: 1em;
-        overflow: auto;
     }
 
     button#copiar{
@@ -231,7 +232,7 @@ footer p{
         position: absolute;
         bottom: 1%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%,50%);
         width: 30vw;
         height: 4.7vh;
     }
@@ -239,7 +240,8 @@ footer p{
     footer{
         position: relative;
         background-color: lightblue;
-        height: 10vh;
+        padding-top: 30px;
+        margin-top: 20px;
     }
     
     footer ul, footer p{
@@ -248,11 +250,13 @@ footer p{
     
     footer li{
         display: inline-block;
-        margin: 1% 0.7%;
+        max-width: 480px;
+        margin: 1% auto;
     }
     
     .item-footer img{
-        width: 2vw;
+        width: 10vw;
+        margin-left: 10px;
     }
     
     footer p{
@@ -261,8 +265,8 @@ footer p{
         left: 50%;
         transform: translateX(-50%);
         font-family: 'Share Tech Mono', monospace;
-        font-size: 0.5em;
+        font-size: 1.29em;
         color: black;
-        margin: 1.3% 0% 0% 0%;
+        margin: 1% 0% 0% 0%;
     }
 }
